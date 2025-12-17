@@ -1,227 +1,80 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Isaac Geers Sala | Facility Manager Senior</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0f1216;
-      --card: #151a21;
-      --accent: #b22222;
-      --text: #e6e6e6;
-      --muted: #9aa0a6;
-    }
+<!-- PROFILE (EN arriba / ES abajo) -->
+<section id="perfil">
+  <h2>Profile</h2>
+  <p>
+    Senior Facility Manager with over ten years of experience in end-to-end facilities management,
+    technical infrastructure, and operations within high-demand environments. Strong background in multi-site operations,
+    budget control, vendor and SLA management, preventive and corrective maintenance, safety, and regulatory compliance.
+  </p>
+  <p>
+    Technical background in Telecommunications and IT, currently expanding expertise through advanced training in
+    Artificial Intelligence focused on process optimization, automation, and operational efficiency to support modern,
+    data-driven operations.
+  </p>
 
-    * { box-sizing: border-box; }
+  <hr style="border:none;border-top:1px solid var(--border);margin:18px 0;"/>
 
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(180deg, #0f1216 0%, #0b0e13 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
+  <h2>Perfil</h2>
+  <p>
+    Facility Manager Senior con más de diez años de experiencia en gestión integral de instalaciones,
+    infraestructuras técnicas y operaciones en entornos de alta exigencia. Especializado en operaciones multisede,
+    control presupuestario, gestión de proveedores y SLAs, mantenimiento preventivo y correctivo, seguridad y
+    cumplimiento normativo.
+  </p>
+  <p>
+    Background técnico en Telecomunicaciones e IT. Actualmente en formación avanzada en Inteligencia Artificial aplicada
+    a la optimización de procesos, automatización y mejora de la eficiencia operativa en entornos modernos y orientados a datos.
+  </p>
+</section>
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 24px;
-    }
+<!-- SKILLS (EN arriba / ES abajo) -->
+<section id="skills">
+  <h2>Core Skills</h2>
+  <ul>
+    <li>Facility Management &amp; Operations</li>
+    <li>Multi-site Operations Management</li>
+    <li>Budget Control &amp; Cost Optimization</li>
+    <li>Vendor, Contract &amp; SLA Management</li>
+    <li>Preventive &amp; Corrective Maintenance</li>
+    <li>Health, Safety &amp; Regulatory Compliance</li>
+    <li>Infrastructure &amp; IT Coordination</li>
+    <li>Incident &amp; Risk Management</li>
+    <li>Team Leadership &amp; Cross-functional Coordination</li>
+    <li>Continuous Improvement &amp; Process Optimization</li>
+  </ul>
 
-    header {
-      display: grid;
-      gap: 16px;
-      margin-bottom: 48px;
-    }
+  <hr style="border:none;border-top:1px solid var(--border);margin:18px 0;"/>
 
-    h1 {
-      font-size: 2.6rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
+  <h2>Competencias Clave</h2>
+  <ul>
+    <li>Gestión integral de instalaciones y operaciones</li>
+    <li>Coordinación de operaciones multisede</li>
+    <li>Control presupuestario y optimización de costes</li>
+    <li>Gestión de proveedores, contratos y SLAs</li>
+    <li>Mantenimiento preventivo y correctivo</li>
+    <li>Seguridad, PRL y cumplimiento normativo</li>
+    <li>Coordinación de infraestructuras e IT</li>
+    <li>Gestión de incidencias y riesgos</li>
+    <li>Liderazgo de equipos y coordinación transversal</li>
+    <li>Mejora continua y optimización de procesos</li>
+  </ul>
+</section>
 
-    h2 {
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: var(--accent);
-      margin-top: 48px;
-      margin-bottom: 16px;
-    }
+<!-- EDUCATION (EN arriba / ES abajo) -->
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><b>Master’s Degree in Artificial Intelligence Development</b> (ongoing) — Focus on process automation, operational optimization, and applied AI in technical and operational environments</li>
+    <li><b>Higher National Diploma in Computer Science</b></li>
+    <li><b>Professional Certifications</b>: Occupational Risk Prevention (60h) · Working at Heights · MTCNA – MikroTik Certified Network Associate</li>
+  </ul>
 
-    .subtitle {
-      font-size: 1.1rem;
-      color: var(--muted);
-    }
+  <hr style="border:none;border-top:1px solid var(--border);margin:18px 0;"/>
 
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 12px;
-    }
-
-    .tag {
-      background: rgba(178,34,34,0.15);
-      color: #ffb3b3;
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-    }
-
-    section {
-      background: var(--card);
-      border-radius: 16px;
-      padding: 28px;
-      margin-top: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
-    }
-
-    .experience {
-      display: grid;
-      gap: 24px;
-    }
-
-    .job {
-      display: grid;
-      gap: 8px;
-    }
-
-    .job-title {
-      font-weight: 600;
-      font-size: 1.05rem;
-    }
-
-    .job-meta {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    ul {
-      margin: 8px 0 0 18px;
-    }
-
-    footer {
-      margin-top: 64px;
-      text-align: center;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      section { padding: 22px; }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-
-    <header>
-      <h1>Isaac Geers Sala</h1>
-      <div class="subtitle">Facility Manager Senior · Operations & Infrastructure</div>
-      <div class="subtitle">Valencia · España · <a href="mailto:igsala@gmail.com">igsala@gmail.com</a> · 693 597 755</div>
-      <div class="tags">
-        <div class="tag">Facility Management</div>
-        <div class="tag">Multisite Operations</div>
-        <div class="tag">Budget Control</div>
-        <div class="tag">Vendor Management</div>
-        <div class="tag">IT & Infrastructure</div>
-        <div class="tag">Continuous Improvement</div>
-      </div>
-    </header>
-
-    <section>
-      <h2>Perfil</h2>
-      <p>
-        Facility Manager Senior con más de diez años de experiencia en gestión integral de instalaciones, infraestructuras técnicas y operaciones en entornos de alta exigencia. Especializado en operaciones multisede, control presupuestario, negociación con proveedores, mantenimiento preventivo y correctivo, seguridad y cumplimiento normativo.
-      </p>
-      <p>
-        Background técnico en telecomunicaciones e IT. Actualmente en formación en Inteligencia Artificial aplicada a la optimización de procesos y automatización como refuerzo estratégico a la eficiencia operativa.
-      </p>
-    </section>
-
-    <section>
-      <h2>Experiencia</h2>
-      <div class="experience">
-
-        <div class="job">
-          <div class="job-title">IT Project Manager & Operations · HOLA WIFI</div>
-          <div class="job-meta">Agosto 2025 – Actualidad</div>
-          <ul>
-            <li>Gestión y coordinación de proyectos tecnológicos y operativos en entorno de telecomunicaciones</li>
-            <li>Coordinación entre equipos técnicos, proveedores y dirección</li>
-            <li>Seguimiento de plazos, control de costes y soporte a la toma de decisiones</li>
-            <li>Apoyo operativo en infraestructuras, redes y servicios críticos</li>
-          </ul>
-        </div>
-
-
-
-        <div class="job">
-          <div class="job-title">Facility Manager · MET OLIVA</div>
-          <div class="job-meta">2023 – 2025</div>
-          <ul>
-            <li>Gestión integral de instalaciones deportivas de gran tamaño</li>
-            <li>Liderazgo de equipos de hasta 100 personas</li>
-            <li>Control presupuestario, proveedores y mantenimiento</li>
-            <li>Supervisión de obras, seguridad y cumplimiento normativo</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <div class="job-title">Responsable de Mantenimiento / Facility Manager · PLENOIL</div>
-          <div class="job-meta">2021 – 2023</div>
-          <ul>
-            <li>Gestión de infraestructuras en red nacional</li>
-            <li>Coordinación de proveedores y equipos técnicos</li>
-            <li>Presupuestos, instalaciones críticas y alta disponibilidad</li>
-          </ul>
-        </div>
-
-        <div class="job">
-          <div class="job-title">Gestor Responsable de Red FO · AVATEL</div>
-          <div class="job-meta">2018 – 2021</div>
-          <ul>
-            <li>Gestión de redes de fibra óptica e infraestructuras</li>
-            <li>Resolución de incidencias críticas</li>
-            <li>Optimización de despliegues y stock técnico</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <h2>Formación</h2>
-      <ul>
-        <li>Máster en Desarrollo de Inteligencia Artificial (en curso)</li>
-        <li>FP Grado Superior en Informática</li>
-        <li>PRL 60h · Trabajos en Altura · MTCNA Mikrotik</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Idiomas</h2>
-      <ul>
-        <li>Español · Nativo</li>
-        <li>Valenciano · Nativo</li>
-        <li>Inglés · Intermedio</li>
-      </ul>
-    </section>
-
-    <footer>
-      © Isaac Geers Sala · CV Web Profesional
-    </footer>
-
-  </div>
-</body>
-</html>
+  <h2>Formación</h2>
+  <ul>
+    <li><b>Máster en Desarrollo de Inteligencia Artificial</b> (en curso) — Enfoque en automatización de procesos, optimización operativa y aplicación práctica de IA en entornos técnicos y operativos</li>
+    <li><b>FP Grado Superior en Informática</b></li>
+    <li><b>Certificaciones profesionales</b>: Prevención de Riesgos Laborales (60h) · Trabajos en Altura · MTCNA – MikroTik Certified Network Associate</li>
+  </ul>
+</section>
