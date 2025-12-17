@@ -1,2 +1,2 @@
 # isaac-geers-cv
-Curriculum Vitae - SPANISH
+Curriculum Vitae - SPAN-GLISH
