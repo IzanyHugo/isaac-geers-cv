@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Isaac Geers | Resume</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --dark: #1e293b;
+            --text: #334155;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        /* Lateral Izquierdo */
+        .sidebar {
+            background-color: var(--dark);
+            color: white;
+            padding: 40px 30px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: #475569;
+            margin-bottom: 20px;
+            border: 4px solid var(--primary);
+        }
+
+        .sidebar h2 { font-size: 1.2rem; margin: 25px 0 15px; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+        
+        .contact-item { display: flex; align-items: center; margin-bottom: 12px; font-size: 0.9rem; }
+        .contact-item i { margin-right: 10px; color: var(--primary); }
+
+        .skill-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 4px 10px;
+            border-radius: 4px;
+            margin: 3px;
+            font-size: 0.85rem;
+        }
+
+        /* Columna Principal */
+        .main-content {
+            padding: 50px;
+            background: white;
+        }
+
+        header h1 { font-size: 2.5rem; color: var(--dark); margin-bottom: 5px; }
+        header p { font-size: 1.1rem; color: var(--primary); font-weight: 600; margin-bottom: 30px; }
+
+        section { margin-bottom: 35px; }
+        section h3 { 
+            border-bottom: 2px solid var(--border); 
+            padding-bottom: 8px; 
+            margin-bottom: 20px; 
+            color: var(--dark);
+            display: flex;
+            align-items: center;
+        }
+        section h3 i { margin-right: 10px; }
+
+        .experience-item { margin-bottom: 20px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: 600; color: var(--dark); }
+        .item-sub { color: var(--primary); font-size: 0.9rem; margin-bottom: 8px; }
+
+        @media (max-width: 768px) {
+            .cv-container { grid-template-columns: 1fr; }
+            .sidebar { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cv-container">
+        <aside class="sidebar">
+            <div class="profile-img"></div> <h2>Contacto</h2>
+            <div class="contact-item"><i data-lucide="mail"></i> isaac.geers@email.com</div>
+            <div class="contact-item"><i data-lucide="github"></i> izanyhugo</div>
+            <div class="contact-item"><i data-lucide="map-pin"></i> Tu Ciudad, País</div>
+
+            <h2>Hard Skills</h2>
+            <span class="skill-badge">HTML5 / CSS3</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Git & GitHub</span>
+
+            <h2>Idiomas</h2>
+            <p>Español (Nativo)</p>
+            <p>Inglés (B2 - Intermedio)</p>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <h1>Isaac Geers</h1>
+                <p>Full Stack Developer</p>
+            </header>
+
+            <section>
+                <h3><i data-lucide="user"></i> Perfil</h3>
+                <p>Desarrollador enfocado en crear soluciones web eficientes y escalables. Apasionado por el aprendizaje continuo y la arquitectura de software limpia.</p>
+            </section>
+
+            <section>
+                <h3><i data-lucide="briefcase"></i> Experiencia</h3>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span>Desarrollador Frontend</span>
+                        <span>2023 - Presente</span>
+                    </div>
+                    <div class="item-sub">Empresa Ejemplo S.A.</div>
+                    <p>Desarrollo de interfaces dinámicas utilizando React y optimización de rendimiento en aplicaciones de una sola página (SPA).</p>
+                </div>
+            </section>
+
+            <section>
+                <h3><i data-lucide="graduation-cap"></i> Educación</h3>
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span>Grado en Ingeniería Informática</span>
+                        <span>2019 - 2023</span>
+                    </div>
+                    <div class="item-sub">Universidad Universitaria</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+</body>
+</html>
